@@ -1,20 +1,11 @@
-import PropTypes from 'prop-types';
-
-const Header = ({ title }) => {
+import Button from './Button';
+const Header = () => {
 	return (
-		<header>
-			<h1>{title}</h1>
-			<h2>Task Tracker</h2>
+		<header className='header'>
+			<h1>Task Tracker</h1>
+			<Button color='green' text='hello' />
 		</header>
 	);
-};
-
-Header.defaultProps = {
-	title: 'Task Tracker',
-};
-
-Header.propTypes = {
-	title: PropTypes.string,
 };
 
 export default Header;
